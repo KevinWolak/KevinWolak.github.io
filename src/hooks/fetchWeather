@@ -1,0 +1,27 @@
+let lat = "";
+let long = "";
+const fetchWeather = async ({ queryKey }) => {
+  const apikey = "48b17b4bc63956b8f85dcea1b9df82a7";
+  const id = queryKey[1];
+
+  navigator.geolocation.getCurrentPosition((position) => {
+    doSomething(position.coords.latitude, position.coords.longitude);
+  });
+
+  const apiRes = await fetch(
+    `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${apikey}`
+  );
+
+  if (!apiRes.ok) {
+    throw new Error(`details/${id} fetch not ok`);
+  }
+
+  return apiRes.json();
+};
+
+function doSomething(lat_, long_) {
+  lat = lat_;
+  long = long_;
+}
+
+export default fetchWeather;
