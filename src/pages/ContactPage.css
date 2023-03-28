@@ -1,0 +1,63 @@
+.contactForm {
+  width: 40rem;
+  height: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+}
+
+label {
+  display: block;
+  margin: 1rem;
+  color: rgb(0, 0, 0);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+input[type="text"] {
+  display: block;
+  width: 90%;
+  padding: 0.5rem;
+  margin: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #0077ff;
+}
+
+.sub {
+  margin-top: 1rem;
+  margin-left: 9rem;
+}
+
+.input-large {
+  padding-top: 0;
+  padding-left: 0;
+  line-height: 1em;
+}
+.formInfo {
+  text-align: center;
+  font-family: "PT Serif ";
+  font-size: 1.5em;
+}
+textarea {
+  display: block;
+  width: 90%;
+  padding: 0.5rem;
+  margin: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+body.dark-mode label {
+  display: block;
+  margin: 1rem;
+  color: rgb(255, 255, 255);
+  font-size: 1.2rem;
+  font-weight: bold;
+}

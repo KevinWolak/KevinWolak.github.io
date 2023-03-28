@@ -7,7 +7,6 @@ import Navbar from "./NavBar/Navbar";
 import About from "./pages/About";
 import ContactPage from "./pages/ContactPage";
 import Project from "./pages/Project";
-import Skill from "./pages/Skill";
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
@@ -28,7 +27,6 @@ function App() {
             <Route path="/about" element={<About />}></Route>
             <Route path="/contact" element={<ContactPage />}></Route>
             <Route path="/project" element={<Project />}></Route>
-            <Route path="/skill" element={<Skill />}></Route>
           </Routes>
         </QueryClientProvider>
       </BrowserRouter>

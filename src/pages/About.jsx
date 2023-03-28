@@ -35,35 +35,41 @@ const About = () => {
         </h2>
         {title ? (
           <div>
-            <p>{'"Basic Info":{'}</p>
+            <p>{'"basicInfo": {'}</p>
             <section className="arrayContainer">
               <p>"firstName": "Kevin",</p>
               <p>"lastName": "Wolak",</p>
-              <p>"Age": "26",</p>
+              <p>"age": 26</p>
             </section>
             <p>{"}"},</p>
-            <p>{'"Location":{'}</p>
+            <p>{'"location": {'}</p>
             <section className="arrayContainer">
-              <p>"City": "London",</p>
-              <p>"Province": "Ontario"</p>
+              <p>"city": "London",</p>
+              <p>"province": "Ontario"</p>
             </section>
             <p>{"}"},</p>
-            <p>{'"Contact":{'}</p>
+            <p>{'"contact": {'}</p>
             <section className="arrayContainer">
-              <p>"Number": "519-694-6925",</p>
-              <p>"Email": "kevinwolak96@gmail.com"</p>
+              <p>"number": "519-694-6925",</p>
+              <p>"email": "kevinwolak96@gmail.com"</p>
             </section>
             <p>{"}"},</p>
-            <p>{'"Skills":{'}</p>
+            <p>{'"skills": {'}</p>
             <section className="arrayContainer">
-              <p>{'"Languanges":['}</p>
-              <p>CSS,HTML,JavaScript,React.js,Express.js,C,C++,C#,Cobol</p>
+              <p>{'"languanges": ['}</p>
+              <p className="languages">
+                "CSS", "HTML", "JavaScript", "React.js", "Express.js", "C",
+                "C++", C#, "Cobol"
+              </p>
               <p>{"]"},</p>
-              <p>{'"Technologies":['}</p>
-              <p>Postman,Git,GitHub,Boostrap,TailWind</p>
-              <p>{"}"},</p>
+              <p>{'"Technologies": ['}</p>
+              <p className="languages">
+                "Postman", "Git", "GitHub", "Bootstrap", "TailWind"
+              </p>
+              <p>{"]"}</p>
             </section>
-            <h2 className="endBracket">{"}"} </h2>
+            <p className="indentation">{"}"}</p>
+            <h2>{"}"} </h2>
           </div>
         ) : null}
       </section>{" "}

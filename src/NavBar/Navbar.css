@@ -47,31 +47,57 @@ nav h1 [class*="fa-"] {
 }
 
 nav a {
-  color: white;
   text-decoration: none;
   display: block;
 }
 
 nav a:hover,
 nav [class*="fa-"]:hover {
-  color: var(--magenta);
-}
-
-.button {
-  background-color: var(--magenta);
-  color: white;
-  padding: 0.5rem;
-  border-radius: 5px;
-  text-decoration: none;
-  font-family: var(--mono);
-}
-
-.button:hover {
-  color: white;
-  background-color: var(--hotmag);
+  color: #16acac;
 }
 
 .home {
   font-family: var(--mono);
   font-size: 3rem;
+}
+
+.icon-container {
+  border: solid;
+  border-width: 2px;
+  border-radius: 4px;
+  border-color: rgb(73, 86, 118);
+  padding: 6px;
+}
+
+body {
+  background-color: #fafafa;
+  color: #000;
+}
+
+/* styles-dark.css */
+body.dark-mode {
+  background-color: #171321;
+  color: #fff;
+}
+
+#dark-mode-toggle {
+  float: right;
+  transform: translateY(-4em);
+}
+
+a {
+  text-decoration: none;
+}
+
+body a {
+  color: rgb(9, 9, 9);
+}
+
+body.dark-mode a {
+  color: rgb(255, 255, 255);
+}
+
+body.dark-mode nav a:hover,
+nav [class*="fa-"]:hover {
+  color: #86fbfb;
 }
