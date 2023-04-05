@@ -49,6 +49,7 @@ nav h1 [class*="fa-"] {
 nav a {
   text-decoration: none;
   display: block;
+  font-size: 1.3rem;
 }
 
 nav a:hover,

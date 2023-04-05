@@ -55,7 +55,7 @@ const Discription = () => {
           <p className="name">
             Hi, my name is <span>Kevin Wolak</span>
           </p>
-          <h2>I develop front and back end websites.</h2>
+          <h2>I develop front and back-end websites.</h2>
           <img src={nerdImage} alt="nerdImage" />
           <p>
             I'm a developer that recently graduated from Fanshawe College. I
