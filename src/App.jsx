@@ -7,6 +7,7 @@ import Navbar from "./NavBar/Navbar";
 import About from "./pages/About";
 import ContactPage from "./pages/ContactPage";
 import Project from "./pages/Project";
+
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {

@@ -2,6 +2,11 @@ import { useState } from "react";
 import "../App.css";
 import nerdImage from "../img/nerdcutout.png";
 import clouds from "../img/clouds.png";
+import clear from "../img/clear.png";
+import snow from "../img/snow.png";
+import drizzle from "../img/drizzle.png";
+import rain from "../img/rain.png";
+import mist from "../img/mist.png";
 import { useQuery } from "@tanstack/react-query";
 import fetchWeather from "../hooks/fetchWeather";
 import { useParams } from "react-router-dom";
@@ -18,15 +23,19 @@ const Discription = () => {
 
   const displayWeatherImg = (data) => {
     if (data.weather[0].description.includes("rain")) {
-      return (
-        <img src="/img/rain.png" width="100" height="100" alt="Rainy Weather" />
-      );
+      return <img src={rain} alt="rain" />;
     } else if (data.weather[0].description.includes("clouds")) {
-      return <img src={clouds} alt="nerdImage" />;
+      return <img src={clouds} alt="clouds" />;
     } else if (data.weather[0].description.includes("sunny")) {
-      return <img src={clouds} alt="nerdImage" />;
+      return <img src={clouds} alt="sunny" />;
     } else if (data.weather[0].description.includes("clear")) {
-      return <img src={clouds} alt="nerdImage" />;
+      return <img src={clear} alt="clear" />;
+    } else if (data.weather[0].description.includes("snow")) {
+      return <img src={snow} alt="snow" />;
+    } else if (data.weather[0].description.includes("drizzle")) {
+      return <img src={drizzle} alt="drizzle" />;
+    } else if (data.weather[0].description.includes("mist")) {
+      return <img src={mist} alt="mist" />;
     }
   };
 

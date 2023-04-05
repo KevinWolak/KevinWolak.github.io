@@ -141,3 +141,36 @@ h2 {
   margin: 0.5rem;
   font-family: "Anton";
 }
+@media (max-width: 767px) {
+  .button {
+    min-width: 250px;
+    min-height: 50px;
+    font-size: 18px;
+  }
+
+  .loading-pane {
+    padding: 10px;
+  }
+
+  .button::before {
+    min-width: calc(250px + 6px);
+    min-height: calc(50px + 6px);
+  }
+}
+
+@media (min-width: 768px) {
+  .button {
+    min-width: 300px;
+    min-height: 60px;
+    font-size: 22px;
+  }
+
+  .loading-pane {
+    padding: 15px;
+  }
+
+  .button::before {
+    min-width: calc(300px + 12px);
+    min-height: calc(60px + 12px);
+  }
+}

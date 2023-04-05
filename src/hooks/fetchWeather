@@ -1,5 +1,7 @@
 const fetchWeather = async ({ queryKey }) => {
+  // const apikey = process.env.REACT_APP_SECRET_NAME;
   const apikey = "48b17b4bc63956b8f85dcea1b9df82a7";
+
   const id = queryKey[1];
 
   try {
