@@ -31,7 +31,7 @@ const Navbar = () => {
     ) {
       document.body.classList.remove("dark-mode");
     }
-  }, [darkThemeEnabled]);
+  }, [darkThemeEnabled, localStorage]);
   return (
     <nav id="nav">
       <ul>
@@ -42,7 +42,11 @@ const Navbar = () => {
         <CustomLink to="/project"> Projects </CustomLink>
         <CustomLink to="/contact"> Contact </CustomLink>
       </ul>
-      <button className="button" id="dark-mode-toggle" onClick={toggleTheme}>
+      <button
+        className="theme-button"
+        id="dark-mode-toggle"
+        onClick={toggleTheme}
+      >
         <div>
           <svg
             width="20"

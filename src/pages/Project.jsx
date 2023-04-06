@@ -1,6 +1,6 @@
 import "./Project.css";
 import academy from "../img/academy.png";
-import fitforyou from "../img/fitForYou.png";
+import fitforyou from "../img/fitforyou.png";
 import gitlogo from "../img/github-mark.png";
 
 const Project = () => {

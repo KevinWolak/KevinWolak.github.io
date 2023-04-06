@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --black: #171321;
   --dkblue: #0d314b;
   --plum: #4b0d49;
@@ -57,19 +57,19 @@ a:hover {
 
 .intro .name {
   font-family: var(--mono);
-  font-size: 1rem;
+  font-size: 0.6rem;
 }
 
 .name span {
   font-family: var(--sans);
-  font-size: 4rem;
+  font-size: 3rem;
   color: #46b9ad;
   display: block;
   font-weight: 300;
 }
 
 .intro h2 {
-  font-size: 4rem;
+  font-size: 2rem;
 }
 
 body.dark-mode .name span {
@@ -78,4 +78,4 @@ body.dark-mode .name span {
   color: var(--aqua);
   display: block;
   font-weight: 300;
-}
+} */

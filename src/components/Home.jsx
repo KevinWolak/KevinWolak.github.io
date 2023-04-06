@@ -23,19 +23,19 @@ const Discription = () => {
 
   const displayWeatherImg = (data) => {
     if (data.weather[0].description.includes("rain")) {
-      return <img src={rain} alt="rain" />;
+      return <img className="weatherImage" src={rain} alt="rain" />;
     } else if (data.weather[0].description.includes("clouds")) {
-      return <img src={clouds} alt="clouds" />;
+      return <img className="weatherImage" src={clouds} alt="clouds" />;
     } else if (data.weather[0].description.includes("sunny")) {
-      return <img src={clouds} alt="sunny" />;
+      return <img className="weatherImage" src={clouds} alt="sunny" />;
     } else if (data.weather[0].description.includes("clear")) {
-      return <img src={clear} alt="clear" />;
+      return <img className="weatherImage" src={clear} alt="clear" />;
     } else if (data.weather[0].description.includes("snow")) {
-      return <img src={snow} alt="snow" />;
+      return <img className="weatherImage" src={snow} alt="snow" />;
     } else if (data.weather[0].description.includes("drizzle")) {
-      return <img src={drizzle} alt="drizzle" />;
+      return <img className="weatherImage" src={drizzle} alt="drizzle" />;
     } else if (data.weather[0].description.includes("mist")) {
-      return <img src={mist} alt="mist" />;
+      return <img className="weatherImage" src={mist} alt="mist" />;
     }
   };
 

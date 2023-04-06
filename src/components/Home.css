@@ -1,8 +1,81 @@
-img {
-  width: 500;
-  height: 600px;
+:root {
+  --black: #171321;
+  --dkblue: #0d314b;
+  --plum: #4b0d49;
+  --hotmag: #ff17e4;
+  --magenta: #e310cb;
+  --aqua: #86fbfb;
+  --white: #f7f8fa;
+  --font-size: 1.3rem;
+  --mono: "Oxygen mono", monospace;
+  --sans: Oxygen, sans-serif;
+}
 
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--sans);
+  background-color: var(--black);
+  color: var(--white);
+  font-size: var(--font-size);
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+a:hover {
+  color: var(--hotmag);
+  text-decoration: none;
+}
+
+.intro {
+  padding-bottom: 10rem;
+}
+
+.intro p {
+  font-size: 0.7rem;
+  line-height: 1.5;
+}
+
+.intro .name {
+  font-family: var(--mono);
+  font-size: 0.6rem;
+}
+.name span {
+  font-family: var(--sans);
+  font-size: 4rem;
+  color: #46b9ad;
+  display: block;
+  font-weight: 300;
+}
+
+.intro h2 {
+  font-size: 2rem;
+}
+
+body.dark-mode .name span {
+  font-family: var(--sans);
+  font-size: 4rem;
+  color: var(--aqua);
+  display: block;
+  font-weight: 300;
+}
+
+img {
+  width: 800px;
+  height: 400px;
   float: right;
+  margin-top: -4%;
 }
 .loader {
   font-size: 100px;
@@ -23,10 +96,10 @@ img {
 }
 
 .button {
-  min-width: 300px;
-  min-height: 60px;
+  min-width: 270px;
+  min-height: 54px;
+  font-size: 19.8px;
   font-family: "Nunito", sans-serif;
-  font-size: 22px;
   text-transform: uppercase;
   letter-spacing: 1.3px;
   font-weight: 700;
@@ -39,36 +112,21 @@ img {
   );
   border: none;
   border-radius: 1000px;
-  box-shadow: 12px 12px 24px rgba(79, 209, 197, 0.64);
+  box-shadow: 10.8px 10.8px 21.6px rgba(79, 209, 197, 0.64);
   transition: all 0.3s ease-in-out 0s;
   cursor: pointer;
   outline: none;
   position: relative;
-  padding: 10px;
+  padding: 9px;
 }
 
 .button::before {
   content: "";
   border-radius: 1000px;
-  min-width: calc(300px + 12px);
-  min-height: calc(60px + 12px);
-  border: 6px solid #00ffcb;
-  box-shadow: 0 0 60px rgba(0, 255, 203, 0.64);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  transition: all 0.3s ease-in-out 0s;
-}
-
-.button::before {
-  content: "";
-  border-radius: 1000px;
-  min-width: calc(300px + 12px);
-  min-height: calc(60px + 12px);
-  border: 6px solid #00ffcb;
-  box-shadow: 0 0 60px rgba(0, 255, 203, 0.64);
+  min-width: calc(270px + 10.8px);
+  min-height: calc(54px + 10.8px);
+  border: 5.4px solid #00ffcb;
+  box-shadow: 0 0 54px rgba(0, 255, 203, 0.64);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -98,7 +156,7 @@ img {
 
 #modal a {
   display: inline-block;
-  margin-right: 15px;
+  margin-right: 10px;
   text-decoration: none;
 }
 
@@ -121,16 +179,16 @@ img {
 
 #modal > div {
   background-color: #171321;
-  max-width: 1000px;
-  padding: 15px;
+  max-width: 667px;
+  padding: 10px;
   text-align: center;
-  border-radius: 30px;
+  border-radius: 20px;
   background: linear-gradient(135deg, #00feba, #5b5481);
 }
 
 #modal .buttons button {
   display: inline-block;
-  margin-right: 15px;
+  margin-right: 10px;
 }
 
 .temp {
@@ -141,36 +199,8 @@ h2 {
   margin: 0.5rem;
   font-family: "Anton";
 }
-@media (max-width: 767px) {
-  .button {
-    min-width: 250px;
-    min-height: 50px;
-    font-size: 18px;
-  }
 
-  .loading-pane {
-    padding: 10px;
-  }
-
-  .button::before {
-    min-width: calc(250px + 6px);
-    min-height: calc(50px + 6px);
-  }
-}
-
-@media (min-width: 768px) {
-  .button {
-    min-width: 300px;
-    min-height: 60px;
-    font-size: 22px;
-  }
-
-  .loading-pane {
-    padding: 15px;
-  }
-
-  .button::before {
-    min-width: calc(300px + 12px);
-    min-height: calc(60px + 12px);
-  }
+.weatherImage {
+  width: 400px;
+  height: 300px;
 }
