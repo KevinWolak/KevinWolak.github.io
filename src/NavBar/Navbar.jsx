@@ -20,18 +20,12 @@ const Navbar = () => {
   useEffect(() => {
     localStorage.setItem("darkThemeEnabled", darkThemeEnabled);
     console.log(localStorage.getItem("darkThemeEnabled"));
-    if (
-      localStorage.getItem("darkThemeEnabled") === "true" &&
-      !document.body.classList.contains("dark-mode")
-    ) {
+    if (localStorage.getItem("darkThemeEnabled") === "true") {
       document.body.classList.add("dark-mode");
-    } else if (
-      localStorage.getItem("darkThemeEnabled") != "true" &&
-      document.body.classList.contains("dark-mode")
-    ) {
+    } else if (localStorage.getItem("darkThemeEnabled") != "true") {
       document.body.classList.remove("dark-mode");
     }
-  });
+  }, [darkThemeEnabled]);
   return (
     <nav id="nav">
       <ul>
