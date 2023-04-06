@@ -31,7 +31,7 @@ const Navbar = () => {
     ) {
       document.body.classList.remove("dark-mode");
     }
-  }, [darkThemeEnabled, localStorage]);
+  });
   return (
     <nav id="nav">
       <ul>
