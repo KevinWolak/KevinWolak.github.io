@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./Navbar.css";
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
 import { FaReact } from "react-icons/fa";
@@ -7,6 +7,7 @@ const Navbar = () => {
   const [darkThemeEnabled, setDarkThemeEnabled] = useState(
     localStorage.getItem("darkThemeEnabled") === "true"
   );
+  const toggleButtonRef = useRef(null);
 
   function toggleTheme() {
     const newDarkThemeEnabled = !darkThemeEnabled;
@@ -20,12 +21,19 @@ const Navbar = () => {
   useEffect(() => {
     localStorage.setItem("darkThemeEnabled", darkThemeEnabled);
     console.log(localStorage.getItem("darkThemeEnabled"));
-    if (localStorage.getItem("darkThemeEnabled") === "true") {
+    if (
+      localStorage.getItem("darkThemeEnabled") === "true" &&
+      !document.body.classList.contains("dark-mode")
+    ) {
       document.body.classList.add("dark-mode");
-    } else if (localStorage.getItem("darkThemeEnabled") != "true") {
+    } else if (
+      localStorage.getItem("darkThemeEnabled") != "true" &&
+      document.body.classList.contains("dark-mode")
+    ) {
       document.body.classList.remove("dark-mode");
     }
   }, [darkThemeEnabled]);
+
   return (
     <nav id="nav">
       <ul>
@@ -39,6 +47,7 @@ const Navbar = () => {
       <button
         className="theme-button"
         id="dark-mode-toggle"
+        ref={toggleButtonRef}
         onClick={toggleTheme}
       >
         <div>
