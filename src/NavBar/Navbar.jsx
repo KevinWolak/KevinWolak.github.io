@@ -16,9 +16,6 @@ const Navbar = () => {
       .querySelectorAll('link[rel="stylesheet"]')
       .forEach((item) => (item.disabled = !newDarkThemeEnabled));
     setDarkThemeEnabled(newDarkThemeEnabled);
-  }
-
-  useEffect(() => {
     localStorage.setItem("darkThemeEnabled", darkThemeEnabled);
     console.log(localStorage.getItem("darkThemeEnabled"));
     if (
@@ -32,7 +29,23 @@ const Navbar = () => {
     ) {
       document.body.classList.remove("dark-mode");
     }
-  }, [darkThemeEnabled]);
+  }
+
+  // useEffect(() => {
+  //   localStorage.setItem("darkThemeEnabled", darkThemeEnabled);
+  //   console.log(localStorage.getItem("darkThemeEnabled"));
+  //   if (
+  //     localStorage.getItem("darkThemeEnabled") === "true" &&
+  //     !document.body.classList.contains("dark-mode")
+  //   ) {
+  //     document.body.classList.add("dark-mode");
+  //   } else if (
+  //     localStorage.getItem("darkThemeEnabled") != "true" &&
+  //     document.body.classList.contains("dark-mode")
+  //   ) {
+  //     document.body.classList.remove("dark-mode");
+  //   }
+  // }, [darkThemeEnabled]);
 
   return (
     <nav id="nav">
