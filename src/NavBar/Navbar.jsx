@@ -4,30 +4,35 @@ import { Link, useMatch, useResolvedPath } from "react-router-dom";
 import { FaReact } from "react-icons/fa";
 
 const Navbar = () => {
-  const [darkThemeEnabled, setDarkThemeEnabled] = useState(false);
+  const [darkThemeEnabled, setDarkThemeEnabled] = useState(
+    localStorage.getItem("darkThemeEnabled") === "true"
+  );
   const toggleButtonRef = useRef(null);
 
   function toggleTheme() {
     const newDarkThemeEnabled = !darkThemeEnabled;
+    document.body.classList.toggle("dark-mode", newDarkThemeEnabled);
+    document
+      .querySelectorAll('link[rel="stylesheet"]')
+      .forEach((item) => (item.disabled = !newDarkThemeEnabled));
     setDarkThemeEnabled(newDarkThemeEnabled);
   }
 
   useEffect(() => {
-    const isDarkThemeEnabled =
-      localStorage.getItem("darkThemeEnabled") === "true";
-    setDarkThemeEnabled(isDarkThemeEnabled);
-
-    const body = document.body;
-    const stylesheetLinks = document.querySelectorAll('link[rel="stylesheet"]');
-
-    if (isDarkThemeEnabled) {
-      body.classList.add("dark-mode");
-      stylesheetLinks.forEach((link) => (link.disabled = true));
-    } else {
-      body.classList.remove("dark-mode");
-      stylesheetLinks.forEach((link) => (link.disabled = false));
+    localStorage.setItem("darkThemeEnabled", darkThemeEnabled);
+    console.log(localStorage.getItem("darkThemeEnabled"));
+    if (
+      localStorage.getItem("darkThemeEnabled") === "true" &&
+      !document.body.classList.contains("dark-mode")
+    ) {
+      document.body.classList.add("dark-mode");
+    } else if (
+      localStorage.getItem("darkThemeEnabled") != "true" &&
+      document.body.classList.contains("dark-mode")
+    ) {
+      document.body.classList.remove("dark-mode");
     }
-  }, []);
+  }, [darkThemeEnabled, setDarkThemeEnabled]);
 
   return (
     <nav id="nav">
