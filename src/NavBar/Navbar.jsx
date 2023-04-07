@@ -32,7 +32,7 @@ const Navbar = () => {
     ) {
       document.body.classList.remove("dark-mode");
     }
-  }, [darkThemeEnabled, setDarkThemeEnabled]);
+  }, [darkThemeEnabled]);
 
   return (
     <nav id="nav">
