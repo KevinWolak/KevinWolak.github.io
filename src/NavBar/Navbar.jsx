@@ -15,24 +15,15 @@ const Navbar = () => {
     document
       .querySelectorAll('link[rel="stylesheet"]')
       .forEach((item) => (item.disabled = !newDarkThemeEnabled));
+    localStorage.setItem("darkThemeEnabled", newDarkThemeEnabled);
     setDarkThemeEnabled(newDarkThemeEnabled);
   }
 
-  useEffect(() => {
-    localStorage.setItem("darkThemeEnabled", darkThemeEnabled);
-    console.log(localStorage.getItem("darkThemeEnabled"));
-    if (
-      localStorage.getItem("darkThemeEnabled") === "true" &&
-      !document.body.classList.contains("dark-mode")
-    ) {
-      document.body.classList.add("dark-mode");
-    } else if (
-      localStorage.getItem("darkThemeEnabled") != "true" &&
-      document.body.classList.contains("dark-mode")
-    ) {
-      document.body.classList.remove("dark-mode");
-    }
-  }, [darkThemeEnabled]);
+  if (localStorage.getItem("darkThemeEnabled") === "true") {
+    document.body.classList.add("dark-mode");
+  } else {
+    document.body.classList.remove("dark-mode");
+  }
 
   return (
     <nav id="nav">
