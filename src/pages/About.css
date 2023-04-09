@@ -192,4 +192,29 @@ body.dark-mode .container {
   body.dark-mode .dynamic-txts li {
     color: #fc6d6d;
   }
+  .dynamic-txts li {
+    font-size: 28px;
+    animation: slide 9s steps(4) infinite;
+  }
+
+  .dynamic-txts li span::after {
+    border-left: 1px solid #fc6d6d;
+    animation: typing 1.5s steps(10) infinite;
+  }
+}
+
+@keyframes slide {
+  100% {
+    top: -270px;
+  }
+}
+
+@keyframes typing {
+  90%,
+  100% {
+    left: calc(100% + 50px);
+  }
+  100% {
+    left: 0;
+  }
 }
