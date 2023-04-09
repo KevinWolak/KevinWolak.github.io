@@ -12,18 +12,18 @@ export default function ThemeToggle() {
     document
       .querySelectorAll('link[rel="stylesheet"]')
       .forEach((item) => (item.disabled = !newDarkThemeEnabled));
-    localStorage.setItem(
-      "darkThemeEnabled",
-      newDarkThemeEnabled ? "true" : "false"
-    );
+    localStorage.setItem("darkThemeEnabled", newDarkThemeEnabled);
     setDarkThemeEnabled(newDarkThemeEnabled);
   }
 
-  if (localStorage.getItem("darkThemeEnabled") === "true") {
-    document.body.classList.add("dark-mode");
-  } else {
-    document.body.classList.remove("dark-mode");
-  }
+  useEffect(() => {
+    if (darkThemeEnabled) {
+      document.body.classList.add("dark-mode");
+    } else {
+      document.body.classList.remove("dark-mode");
+    }
+    localStorage.setItem("darkThemeEnabled", darkThemeEnabled);
+  }, [darkThemeEnabled]);
 
   return (
     <button
