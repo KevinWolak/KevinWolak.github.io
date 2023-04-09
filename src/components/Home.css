@@ -204,3 +204,44 @@ h2 {
   width: 400px;
   height: 300px;
 }
+
+@media screen and (max-width: 480px) {
+  /* Adjustments for smaller screens */
+  body {
+    font-size: 16px;
+  }
+
+  .intro p {
+    font-size: 1rem;
+  }
+
+  .name span {
+    font-size: 3rem;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    margin: 2rem 0;
+    float: none;
+  }
+
+  .content {
+    margin: 0;
+  }
+
+  .button {
+    min-width: 180px;
+    font-size: 16px;
+    padding: 6px;
+  }
+
+  #modal > div {
+    max-width: 90%;
+  }
+
+  .weatherImage {
+    width: 100%;
+    height: auto;
+  }
+}
