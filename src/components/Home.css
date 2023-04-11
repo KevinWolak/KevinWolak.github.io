@@ -245,3 +245,11 @@ h2 {
     height: auto;
   }
 }
+
+body.light {
+  background-color: white;
+}
+
+body.dark {
+  background-color: #000000;
+}
