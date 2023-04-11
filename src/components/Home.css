@@ -117,7 +117,9 @@ img {
   cursor: pointer;
   outline: none;
   position: relative;
-  padding: 7.2px;
+  padding: 7.8px;
+  margin-left: 1.2rem;
+  margin-top: 1rem;
 }
 
 .button::before {
@@ -193,10 +195,6 @@ img {
 
 .temp {
   font-size: 4rem;
-}
-
-h2 {
-  margin: 0.5rem;
 }
 
 .weatherImage {
