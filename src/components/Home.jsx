@@ -76,8 +76,10 @@ const Discription = () => {
                 <div>
                   <h1>Weather Report</h1>
                   <div className="buttons">
-                    <h2>Forecast: {weather?.main}</h2>
-                    <h2>City: {city} </h2>
+                    <h2 className="modal-textforcast">
+                      Forecast: {weather?.main}
+                    </h2>
+                    <h2 className="modal-textforcast">City: {city} </h2>
                     <div id="weatherImg">{displayWeatherImg(results.data)}</div>
                     <h3 className="temp">{temp}ºC </h3>
                     <button

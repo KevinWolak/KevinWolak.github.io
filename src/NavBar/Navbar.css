@@ -86,9 +86,9 @@ body a {
 #theme-button {
   float: right;
   margin-right: 20px;
-  min-width: 81px;
-  min-height: 54px;
-  font-size: 19.8px;
+  min-width: 69px;
+  min-height: 45.9px;
+  font-size: 16.83px;
   font-family: "Nunito", sans-serif;
   text-transform: uppercase;
   letter-spacing: 1.3px;
@@ -102,21 +102,21 @@ body a {
   );
   border: none;
   border-radius: 1000px;
-  box-shadow: 7.56px 7.56px 15.12px rgba(79, 209, 197, 0.64);
+  box-shadow: 6.426px 6.426px 12.852px rgba(79, 209, 197, 0.64);
   transition: all 0.3s ease-in-out 0s;
   cursor: pointer;
   outline: none;
   position: relative;
-  padding: 9px;
+  padding: 7.65px;
 }
 
 #theme-button::before {
   content: "";
   border-radius: 1000px;
-  min-width: calc(81px + 7.56px);
-  min-height: calc(54px + 7.56px);
-  border: 3.78px solid #00ffcb;
-  box-shadow: 0 0 37.8px rgba(0, 255, 203, 0.64);
+  min-width: calc(69px + 6.426px);
+  min-height: calc(45.9px + 6.426px);
+  border: 3.078px solid #00ffcb;
+  box-shadow: 0 0 30.78px rgba(0, 255, 203, 0.64);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -124,7 +124,6 @@ body a {
   opacity: 0;
   transition: all 0.3s ease-in-out 0s;
 }
-
 #theme-button:hover,
 #theme-button:focus {
   color: #000000;

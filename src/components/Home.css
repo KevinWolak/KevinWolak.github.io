@@ -78,7 +78,7 @@ img {
   margin-top: -4%;
 }
 .loader {
-  font-size: 100px;
+  font-size: 50px;
   animation: spin 1s linear infinite;
 }
 
@@ -96,9 +96,9 @@ img {
 }
 
 .button {
-  min-width: 270px;
-  min-height: 54px;
-  font-size: 19.8px;
+  min-width: 216px;
+  min-height: 43.2px;
+  font-size: 15.84px;
   font-family: "Nunito", sans-serif;
   text-transform: uppercase;
   letter-spacing: 1.3px;
@@ -111,22 +111,22 @@ img {
     rgba(79, 209, 197, 1) 100%
   );
   border: none;
-  border-radius: 1000px;
-  box-shadow: 10.8px 10.8px 21.6px rgba(79, 209, 197, 0.64);
+  border-radius: 800px;
+  box-shadow: 8.64px 8.64px 17.28px rgba(79, 209, 197, 0.64);
   transition: all 0.3s ease-in-out 0s;
   cursor: pointer;
   outline: none;
   position: relative;
-  padding: 9px;
+  padding: 7.2px;
 }
 
 .button::before {
   content: "";
-  border-radius: 1000px;
-  min-width: calc(270px + 10.8px);
-  min-height: calc(54px + 10.8px);
-  border: 5.4px solid #00ffcb;
-  box-shadow: 0 0 54px rgba(0, 255, 203, 0.64);
+  border-radius: 800px;
+  min-width: calc(216px + 8.64px);
+  min-height: calc(43.2px + 8.64px);
+  border: 4.32px solid #00ffcb;
+  box-shadow: 0 0 43.2px rgba(0, 255, 203, 0.64);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -197,7 +197,6 @@ img {
 
 h2 {
   margin: 0.5rem;
-  font-family: "Anton";
 }
 
 .weatherImage {
@@ -260,4 +259,7 @@ body.dark p {
 
 body.dark h2 {
   color: rgb(255, 255, 255);
+}
+body.dark .modal-textforcast {
+  color: rgb(0, 0, 0);
 }

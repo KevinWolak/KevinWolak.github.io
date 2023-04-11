@@ -49,8 +49,8 @@ const ContactPage = () => {
     <div>
       {/* <h3 className="contactHeader">Contact me</h3> */}
       <p className="formInfo">
-        Feel free to leave your contact information and I will get back to you
-        as soon as I can.
+        Please do not hesitate to provide your contact details, and I will make
+        sure to reach out to you as soon as possible.
       </p>
       <form className="contactForm" ref={form} onSubmit={sendEmail}>
         <label htmlFor="user_name">
