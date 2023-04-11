@@ -67,7 +67,7 @@
   margin-top: 1.33rem;
 }
 
-body.dark-mode .card {
+body.dark .card {
   margin-top: 3.33rem;
   width: 300px;
   height: 433.33px;
@@ -77,20 +77,20 @@ body.dark-mode .card {
   transition: all 0.3s ease-in-out;
 }
 
-body.dark-mode .card-header {
+body.dark .card-header {
   position: relative;
   height: 133.33px;
   background-color: #f6f6f6;
 }
 
-body.dark-mode .card-body {
+body.dark .card-body {
   height: 400px;
   padding: 13.33px;
   background-color: #fff;
   color: #666;
 }
 
-body.dark-mode .card-body p {
+body.dark .card-body p {
   margin: 0;
   line-height: 1.17;
   font-size: 14.5px;
@@ -127,24 +127,24 @@ body.dark-mode .card-body p {
     margin-top: 0.5rem;
   }
 
-  body.dark-mode .card {
+  body.dark .card {
     margin-top: 1rem;
     height: auto;
   }
 
-  body.dark-mode .card-header h2 {
+  body.dark .card-header h2 {
     font-size: 1rem;
   }
 
-  body.dark-mode .card-body {
+  body.dark .card-body {
     padding: 1rem;
   }
 
-  body.dark-mode .card-body p {
+  body.dark .card-body p {
     font-size: 13px;
   }
 
-  body.dark-mode .logo {
+  body.dark .logo {
     margin-right: 0.5rem;
     margin-top: 0.5rem;
   }

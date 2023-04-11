@@ -75,17 +75,6 @@ body {
   color: #000;
 }
 
-/* styles-dark.css */
-body.dark-mode {
-  background-color: #171321;
-  color: #fff;
-}
-
-#dark-mode-toggle {
-  float: right;
-  transform: translateY(-4em);
-}
-
 a {
   text-decoration: none;
 }
@@ -94,16 +83,9 @@ body a {
   color: rgb(9, 9, 9);
 }
 
-body.dark-mode a {
-  color: rgb(255, 255, 255);
-}
-
-body.dark-mode nav a:hover,
-nav [class*="fa-"]:hover {
-  color: #86fbfb;
-}
-
-.theme-button {
+#theme-button {
+  float: right;
+  margin-right: 20px;
   min-width: 81px;
   min-height: 54px;
   font-size: 19.8px;
@@ -128,7 +110,7 @@ nav [class*="fa-"]:hover {
   padding: 9px;
 }
 
-.theme-button::before {
+#theme-button::before {
   content: "";
   border-radius: 1000px;
   min-width: calc(81px + 7.56px);
@@ -143,13 +125,22 @@ nav [class*="fa-"]:hover {
   transition: all 0.3s ease-in-out 0s;
 }
 
-.theme-button:hover,
-.theme-button:focus {
+#theme-button:hover,
+#theme-button:focus {
   color: #000000;
   transform: translateY(-6px);
 }
 
-.theme-button:hover::before,
-.theme-button:focus::before {
+#theme-button:hover::before,
+#theme-button:focus::before {
   opacity: 1;
+}
+
+body.dark a {
+  color: rgb(255, 255, 255);
+}
+
+body.dark nav a:hover,
+nav [class*="fa-"]:hover {
+  color: #86fbfb;
 }

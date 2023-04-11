@@ -34,7 +34,7 @@ export default function ThemeToggle() {
   return (
     <button
       className={theme === "dark" ? clickedClass : ""}
-      id="darkMode"
+      id="theme-button"
       onClick={(e) => switchTheme(e)}
     >
       <div>

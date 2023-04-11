@@ -94,7 +94,7 @@ p {
   margin-right: 4.5rem;
 }
 
-body.dark-mode .dynamic-txts li span::after {
+body.dark .dynamic-txts li span::after {
   content: "";
   position: absolute;
   left: 0;
@@ -114,13 +114,13 @@ body.dark-mode .dynamic-txts li span::after {
   }
 }
 
-body.dark-mode .wrapper {
+body.dark .wrapper {
   margin-left: 36.75rem;
   display: flex;
   min-height: 1vh;
   background: #171321;
 }
-body.dark-mode .container {
+body.dark .container {
   margin-left: auto;
   margin-right: auto;
   width: 41.25rem;

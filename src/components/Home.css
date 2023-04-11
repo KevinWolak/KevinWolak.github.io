@@ -247,9 +247,17 @@ h2 {
 }
 
 body.light {
-  background-color: white;
+  background-color: #f7f8fa;
 }
 
 body.dark {
-  background-color: #000000;
+  background-color: #171321;
+}
+
+body.dark p {
+  color: rgb(255, 255, 255);
+}
+
+body.dark h2 {
+  color: rgb(255, 255, 255);
 }

@@ -56,7 +56,7 @@ textarea {
   font-size: 0.67rem;
 }
 
-body.dark-mode label {
+body.dark label {
   display: block;
   margin: 0.67rem;
   color: rgb(255, 255, 255);
