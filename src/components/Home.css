@@ -54,7 +54,7 @@ a:hover {
 .name span {
   font-family: var(--sans);
   font-size: 4rem;
-  color: #86fbfb;
+  color: #46b9ad;
   display: block;
   font-weight: 300;
 }
@@ -105,6 +105,7 @@ img {
   font-weight: 700;
   color: #313133;
   background: #4fd1c5;
+
   background: linear-gradient(
     90deg,
     rgba(129, 230, 217, 1) 0%,
@@ -264,7 +265,8 @@ body.dark .modal-textforcast {
 body.dark .name span {
   font-family: var(--sans);
   font-size: 4rem;
-  color: #46b9ad;
+  color: #86fbfb;
+
   display: block;
   font-weight: 300;
 }
