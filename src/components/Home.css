@@ -43,13 +43,13 @@ a:hover {
 }
 
 .intro p {
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   line-height: 1.5;
 }
 
 .intro .name {
   font-family: var(--mono);
-  font-size: 0.6rem;
+  font-size: 0.75rem;
 }
 .name span {
   font-family: var(--sans);

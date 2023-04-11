@@ -56,7 +56,7 @@ const Discription = () => {
             Hi, my name is <span>Kevin Wolak</span>
           </p>
           <h2>I develop front and back-end websites.</h2>
-          {/* <img src={nerdImage} alt="nerdImage" /> */}
+          <img src={nerdImage} alt="nerdImage" />
           <p>
             I'm a developer that recently graduated from Fanshawe College. I
             specialize in React.js and Express.js.

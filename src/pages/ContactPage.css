@@ -43,7 +43,7 @@ input[type="text"]:focus {
 .formInfo {
   text-align: center;
   font-family: "PT Serif ";
-  font-size: 1em;
+  font-size: 1.2em;
 }
 
 textarea {
