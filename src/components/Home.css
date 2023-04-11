@@ -54,7 +54,7 @@ a:hover {
 .name span {
   font-family: var(--sans);
   font-size: 4rem;
-  color: #46b9ad;
+  color: #86fbfb;
   display: block;
   font-weight: 300;
 }
@@ -259,5 +259,12 @@ body.dark h2 {
   color: rgb(255, 255, 255);
 }
 body.dark .modal-textforcast {
-  color: rgb(0, 0, 0);
+  color: #171321;
+}
+body.dark .name span {
+  font-family: var(--sans);
+  font-size: 4rem;
+  color: #46b9ad;
+  display: block;
+  font-weight: 300;
 }
