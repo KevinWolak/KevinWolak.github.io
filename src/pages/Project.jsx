@@ -25,7 +25,7 @@ const Project = () => {
           </div>
         </div>
       </a>
-      <a href="https://github.com/KevinWolak/portfolio">
+      <a href="https://github.com/KevinWolak/ReactFitForYou">
         <div className="card">
           <div className="card-header">
             <img src={fitforyou} alt="nerdImage" />
