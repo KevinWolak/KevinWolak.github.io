@@ -251,17 +251,24 @@ img {
 .temp {
   font-size: 3.5rem;
   color: rgb(255, 255, 255);
+  margin-top: 1rem;
 }
 
 .weatherContainer {
-  width: 300px;
-  height: 350px;
+  width: 350px;
+  height: 400px;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
 }
 
 .weatherImage {
-  margin-top: 0.6rem;
   width: 50%;
   height: auto;
+  margin-top: 0.3rem;
+  margin-bottom: 1rem;
   margin-right: 4.6rem;
 }
 
@@ -287,7 +294,8 @@ img {
   }
 
   .content {
-    margin: 0;
+    margin-left: 20rem;
+    margin-top: 2rem;
   }
 
   .button {
@@ -308,6 +316,7 @@ img {
 
 .modal-textforcast {
   color: hsl(0, 0%, 100%);
+  margin-bottom: 1rem;
 }
 
 body.light {
@@ -330,7 +339,6 @@ body.dark .name span {
   font-family: var(--sans);
   font-size: 4rem;
   color: #86fbfb;
-
   display: block;
   font-weight: 300;
 }
