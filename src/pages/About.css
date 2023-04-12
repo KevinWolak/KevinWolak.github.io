@@ -29,7 +29,7 @@ p {
 }
 
 .detial:hover {
-  color: #fc6d6d;
+  color: #46b9ad;
   text-decoration: none;
 }
 
@@ -53,7 +53,7 @@ p {
 .dynamic-txts li {
   text-align: center;
   list-style: none;
-  color: #fc6d6d;
+  color: #46b9ad;
   font-size: 45px;
   font-weight: 500;
   position: relative;
@@ -73,7 +73,7 @@ p {
   height: 100%;
   width: 100%;
   background: #fafafa;
-  border-left: 1.5px solid #fc6d6d;
+  border-left: 1.5px solid#46b9ad;
   animation: typing 2.25s steps(10) infinite;
 }
 @keyframes typing {
@@ -101,7 +101,7 @@ body.dark .dynamic-txts li span::after {
   height: 97.5%;
   width: 100%;
   background: #171321;
-  border-left: 1.5px solid #fc6d6d;
+  border-left: 1.5px solid #86fbfb;
   animation: typing 2.25s steps(10) infinite;
 }
 @keyframes typing {
@@ -128,4 +128,20 @@ body.dark .container {
   border: 3px solid;
   padding: 15px; /* 20px / 1.25 = 15px */
   background-color: rgb(0, 0, 0);
+}
+
+body.dark .dynamic-txts li {
+  text-align: center;
+  list-style: none;
+  color: #86fbfb;
+  font-size: 45px;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 9s steps(4) infinite;
+}
+
+body.dark .detial:hover {
+  color: #86fbfb;
+  text-decoration: none;
 }
