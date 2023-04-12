@@ -73,14 +73,14 @@ const Discription = () => {
                   <h2 className="loader">🌀</h2>
                 </div>
               ) : (
-                <div>
+                <div className="weatherContainery">
                   <div className="buttons">
                     <div id="weatherImg">{displayWeatherImg(results.data)}</div>
                     <h3 className="temp">{temp}ºC </h3>
                     {/* <h2 className="modal-textforcast">{weather?.main}</h2> */}
                     <h2 className="modal-textforcast">{city} </h2>
                     <button
-                      className="button"
+                      className="weatherButton"
                       onClick={() => setShowModal(false)}
                     >
                       Close

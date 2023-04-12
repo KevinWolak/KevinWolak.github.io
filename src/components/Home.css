@@ -151,6 +151,58 @@ img {
   opacity: 1;
 }
 
+.weatherButton {
+  min-width: 151.2px;
+  min-height: 30.24px;
+  font-size: 11.088px;
+  font-family: "Nunito", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.91px;
+  font-weight: 700;
+  color: #313133;
+  background: #4fd1c5;
+  background: linear-gradient(
+    90deg,
+    rgba(129, 230, 217, 1) 0%,
+    rgba(79, 209, 197, 1) 100%
+  );
+  border: none;
+  border-radius: 560px;
+  box-shadow: 6.048px 6.048px 12.096px rgba(79, 209, 197, 0.64);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 5.46px;
+  margin-left: 0.84rem;
+  margin-top: 0.7rem;
+}
+
+.weatherButton::before {
+  content: "";
+  border-radius: 560px;
+  min-width: calc(151.2px + 6.048px);
+  min-height: calc(30.24px + 6.048px);
+  border: 3.024px solid #00ffcb;
+  box-shadow: 0 0 30.24px rgba(0, 255, 203, 0.64);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.weatherButton:hover,
+.weatherButton:focus {
+  color: #000000;
+  transform: translateY(-4.2px);
+}
+
+.weatherButton:hover::before,
+.weatherButton:focus::before {
+  opacity: 1;
+}
 .content {
   margin-left: 10rem;
 }
@@ -201,12 +253,13 @@ img {
   color: rgb(255, 255, 255);
 }
 
-/* .weatherImage {
+.weatherContainer {
   width: 300px;
-  height: 200px;
-} */
+  height: 350px;
+}
 
 .weatherImage {
+  margin-top: 0.6rem;
   width: 50%;
   height: auto;
   margin-right: 4.6rem;
