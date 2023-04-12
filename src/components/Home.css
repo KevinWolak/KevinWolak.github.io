@@ -45,6 +45,7 @@ a:hover {
 .intro p {
   font-size: 0.75rem;
   line-height: 1.5;
+  font-family: var(--sans);
 }
 
 .intro .name {
@@ -61,6 +62,7 @@ a:hover {
 
 .intro h2 {
   font-size: 2.3rem;
+  margin-left: -1rem;
 }
 
 body.dark-mode .name span {
@@ -78,7 +80,7 @@ img {
   margin-top: -6.5%;
 }
 .loader {
-  font-size: 50px;
+  font-size: 30px;
   animation: spin 1s linear infinite;
 }
 
@@ -195,12 +197,19 @@ img {
 }
 
 .temp {
-  font-size: 4rem;
+  font-size: 3.5rem;
+  color: rgb(255, 255, 255);
 }
 
+/* .weatherImage {
+  width: 300px;
+  height: 200px;
+} */
+
 .weatherImage {
-  width: 400px;
-  height: 300px;
+  width: 50%;
+  height: auto;
+  margin-right: 4.6rem;
 }
 
 @media screen and (max-width: 480px) {
@@ -237,11 +246,15 @@ img {
   #modal > div {
     max-width: 90%;
   }
-
+  /* 
   .weatherImage {
-    width: 100%;
+    width: 60%;
     height: auto;
-  }
+  } */
+}
+
+.modal-textforcast {
+  color: hsl(0, 0%, 100%);
 }
 
 body.light {
@@ -259,9 +272,7 @@ body.dark p {
 body.dark h2 {
   color: rgb(255, 255, 255);
 }
-body.dark .modal-textforcast {
-  color: #171321;
-}
+
 body.dark .name span {
   font-family: var(--sans);
   font-size: 4rem;

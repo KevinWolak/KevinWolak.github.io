@@ -27,7 +27,7 @@ const Discription = () => {
     } else if (data.weather[0].description.includes("clouds")) {
       return <img className="weatherImage" src={clouds} alt="clouds" />;
     } else if (data.weather[0].description.includes("sunny")) {
-      return <img className="weatherImage" src={clouds} alt="sunny" />;
+      return <img className="weatherImage" src={clear} alt="sunny" />;
     } else if (data.weather[0].description.includes("clear")) {
       return <img className="weatherImage" src={clear} alt="clear" />;
     } else if (data.weather[0].description.includes("snow")) {
@@ -55,7 +55,7 @@ const Discription = () => {
           <p className="name">
             Hi, my name is <span>Kevin Wolak</span>
           </p>
-          <h2>I develop front and back-end websites.</h2>
+          <h2 className="devlopTag">I develop front and back-end websites.</h2>
           <img src={nerdImage} alt="nerdImage" />
           <p>
             I'm a developer that recently graduated from Fanshawe College. I
@@ -74,14 +74,11 @@ const Discription = () => {
                 </div>
               ) : (
                 <div>
-                  <h1>Weather Report</h1>
                   <div className="buttons">
-                    <h2 className="modal-textforcast">
-                      Forecast: {weather?.main}
-                    </h2>
-                    <h2 className="modal-textforcast">City: {city} </h2>
                     <div id="weatherImg">{displayWeatherImg(results.data)}</div>
                     <h3 className="temp">{temp}ºC </h3>
+                    {/* <h2 className="modal-textforcast">{weather?.main}</h2> */}
+                    <h2 className="modal-textforcast">{city} </h2>
                     <button
                       className="button"
                       onClick={() => setShowModal(false)}
