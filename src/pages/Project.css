@@ -10,13 +10,13 @@
   height: 433.33px;
   border-radius: 6.67px;
   overflow: hidden;
-  box-shadow: 0px 1.33px 6.67px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1.33px 6.67px rgba(0, 0, 0, 0.6);
   transition: all 0.3s ease-in-out;
 }
 
 .card:hover {
   transform: translateY(-3.33px);
-  box-shadow: 0px 6.67px 13.33px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 6.67px 13.33px rgba(0, 0, 0, 0.8);
 }
 
 .card-header {
@@ -55,7 +55,7 @@
 .card-body p {
   margin: 0;
   line-height: 1.17;
-  font-size: 15px;
+  font-size: 14.5px;
   color: #fefefe;
 }
 
@@ -65,6 +65,8 @@
   display: flex;
   margin-right: 8rem;
   margin-top: 1.33rem;
+  background-color: white;
+  border-radius: 50%;
 }
 
 body.dark .card {
@@ -73,8 +75,13 @@ body.dark .card {
   height: 433.33px;
   border-radius: 6.67px;
   overflow: hidden;
-  box-shadow: 0px 1.33px 6.67px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1.33px 6.67px rgba(0, 0, 0, 0.6);
   transition: all 0.3s ease-in-out;
+}
+
+body.dark .card:hover {
+  transform: translateY(-3.33px);
+  box-shadow: 0px 6.67px 13.33px rgba(255, 255, 255, 0.8);
 }
 
 body.dark .card-header {
@@ -95,6 +102,14 @@ body.dark .card-body p {
   line-height: 1.17;
   font-size: 14.5px;
   color: #000000;
+}
+
+body.dark .logo {
+  width: 33.33px;
+  height: 33.33px;
+  display: flex;
+  margin-right: 8rem;
+  margin-top: 1.33rem;
 }
 
 .text-bold {
