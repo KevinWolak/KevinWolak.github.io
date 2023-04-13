@@ -88,7 +88,7 @@ const Discription = () => {
             Currently, I am focus on building a Tutoring Website utilizing the
             latest web development standards and practices.
           </p>
-          <button className="button" onClick={showWeatherHandler}>
+          <button className="button " onClick={showWeatherHandler}>
             Weather Report
           </button>
           {showModal && (
@@ -115,7 +115,7 @@ const Discription = () => {
                         <h3>
                           <img src={windImg} />
                           Wind:
-                          {wind}
+                          {wind} km
                         </h3>
                       </div>
                     </div>
