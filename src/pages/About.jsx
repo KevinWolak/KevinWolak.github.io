@@ -56,7 +56,10 @@ const About = () => {
             <p>{'"Passion": {'}</p>
             <section className="arrayContainer">
               <p>{'"Hobbies": ['}</p>
-              <p className="languages"> "Code","Chess","Golf","Baseketball"</p>
+              <p className="languages">
+                {" "}
+                "Code", "Chess", "Golf", "Baseketball"
+              </p>
               <p>{"]"}</p>
             </section>
             <p>{"}"},</p>
