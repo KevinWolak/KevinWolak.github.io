@@ -143,3 +143,20 @@ body.dark nav a:hover,
 nav [class*="fa-"]:hover {
   color: #86fbfb;
 }
+
+.moon {
+  fill: black;
+}
+
+.sun {
+  fill: white;
+}
+
+/* 
+.moon {
+  fill: rgb(255, 255, 255);
+}
+
+.sun {
+  fill: #f28c38;
+} */
