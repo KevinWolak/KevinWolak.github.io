@@ -379,10 +379,20 @@ body.dark .name span {
   display: block;
   font-weight: 300;
 }
-.fade-in {
+/* .fade-in {
   opacity: 0;
   transition: opacity 1s ease-in;
 }
 .fade-in.visible {
   opacity: 1;
+} */
+.fade-in {
+  opacity: 0;
+  background-color: #fff;
+  transition: opacity 1s ease-in, background-color 0.5s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  background-color: transparent;
 }
