@@ -58,7 +58,7 @@ const Discription = () => {
   };
 
   const humidity = results.data?.main.humidity;
-  const wind = results.data?.wind.speed;
+  const wind = parseInt(results.data?.wind.speed);
   const city = results.data?.name;
   const temp = parseInt(results.data?.main.temp);
   console.log(humidity);
