@@ -109,13 +109,11 @@ const Discription = () => {
                       <div class="weather-details-row">
                         <h3>
                           <img src={humidityImg} />
-                          Humidity:
-                          {humidity}
+                          Humidity: {humidity}%
                         </h3>
                         <h3>
                           <img src={windImg} />
-                          Wind:
-                          {wind} km
+                          Wind: {wind} km/h
                         </h3>
                       </div>
                     </div>
