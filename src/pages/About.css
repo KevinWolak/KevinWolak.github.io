@@ -34,24 +34,31 @@ p {
 }
 
 .about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.static-txt {
   text-align: center;
 }
 
 .wrapper {
-  margin-left: 36rem;
+  margin-left: -0.1rem;
   display: flex;
   min-height: 1vh;
   background: #fafafa;
 }
 .wrapper .dynamic-txts {
   text-align: center;
-  margin-left: 11.25px;
+  margin-left: -25px;
   height: 67.5px;
   line-height: 67.5px;
   overflow: hidden;
 }
 .dynamic-txts li {
-  text-align: center;
+  text-align: justify;
   list-style: none;
   color: #46b9ad;
   font-size: 45px;
@@ -115,7 +122,7 @@ body.dark .dynamic-txts li span::after {
 }
 
 body.dark .wrapper {
-  margin-left: 36.75rem;
+  margin-left: -0.1rem;
   display: flex;
   min-height: 1vh;
   background: #171321;
@@ -131,9 +138,9 @@ body.dark .container {
 }
 
 body.dark .dynamic-txts li {
-  text-align: center;
+  text-align: justify;
   list-style: none;
-  color: #86fbfb;
+  color: #46b9ad;
   font-size: 45px;
   font-weight: 500;
   position: relative;
