@@ -82,8 +82,12 @@ const Discription = () => {
             I'm a developer that recently graduated from Fanshawe College. I
             specialize in React.js and Express.js.
           </p>
-
-          <p>Currently, I'm working on building a Tutoring Website.</p>
+          {/* 
+          <p>Currently, I'm working on building a Tutoring Website.</p> */}
+          <p>
+            Currently, I am focus on building a Tutoring Website utilizing the
+            latest web development standards and practices.
+          </p>
           <button className="button" onClick={showWeatherHandler}>
             Weather Report
           </button>
