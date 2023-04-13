@@ -53,6 +53,12 @@ const About = () => {
               <p>"number": "519-694-6925",</p>
               <p>"email": "kevinwolak96@gmail.com"</p>
             </section>
+            <p>{'"Passion": {'}</p>
+            <section className="arrayContainer">
+              <p>{'"Hobbies": ['}</p>
+              <p className="languages"> "Code","Chess","Golf","Baseketball"</p>
+              <p>{"]"}</p>
+            </section>
             <p>{"}"},</p>
             <p>{'"skills": {'}</p>
             <section className="arrayContainer">
