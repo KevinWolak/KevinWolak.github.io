@@ -309,13 +309,19 @@ img {
   align-items: center;
   margin-right: 1rem;
 }
-@media screen and (max-width: 480px) {
-  /* Adjustments for smaller screens */
-  body {
-    font-size: 16px;
+@media only screen and (max-width: 600px) {
+  /* Modify the CSS rules for smaller screens */
+
+  .intro {
+    padding-bottom: 5rem;
   }
 
   .intro p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .intro .name {
     font-size: 1rem;
   }
 
@@ -323,30 +329,58 @@ img {
     font-size: 3rem;
   }
 
+  .intro h2 {
+    font-size: 1.5rem;
+    margin-left: 0;
+  }
+
   img {
     width: 100%;
     height: auto;
-    margin: 2rem 0;
     float: none;
+    margin-top: 0;
   }
 
   .content {
-    margin-left: 20rem;
+    margin-left: 0;
     margin-top: 2rem;
   }
 
   .button {
-    min-width: 180px;
-    font-size: 16px;
-    padding: 6px;
+    min-width: 150px;
+    min-height: 30px;
+    font-size: 14px;
+    padding: 5px;
+    margin-left: 0.5rem;
+    margin-top: 1rem;
   }
 
-  #modal > div {
-    max-width: 90%;
+  .button::before {
+    min-width: calc(150px + 8.64px);
+    min-height: calc(30px + 8.64px);
+    border: 2px solid #00ffcb;
+    box-shadow: 0 0 20px rgba(0, 255, 203, 0.64);
   }
-  .weatherImage {
-    width: 60%;
-    height: auto;
+
+  .weatherButton {
+    min-width: 120px;
+    min-height: 24px;
+    font-size: 11px;
+    padding: 3px;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .weatherButton::before {
+    min-width: calc(120px + 6.048px);
+    min-height: calc(24px + 6.048px);
+    border: 2px solid #00ffcb;
+    box-shadow: 0 0 15px rgba(0, 255, 203, 0.64);
+  }
+
+  .loading-pane {
+    padding: 10px;
   }
 }
 
