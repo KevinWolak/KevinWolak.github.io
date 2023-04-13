@@ -176,6 +176,7 @@ img {
   padding: 5.46px;
   margin-left: 0.84rem;
   margin-top: 0.7rem;
+  margin-bottom: 0.5rem;
 }
 
 .weatherButton::before {
@@ -249,29 +250,65 @@ img {
 }
 
 .temp {
-  font-size: 3.5rem;
+  font-size: 2.2rem;
   color: rgb(255, 255, 255);
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 .weatherContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 350px;
   height: 400px;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 4rem auto;
   padding: 1rem;
 }
 
-.weatherImage {
-  width: 50%;
-  height: auto;
-  margin-top: 0.3rem;
-  margin-bottom: 1rem;
-  margin-right: 4.6rem;
+.weather-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+.weather-details h3 {
+  font-size: 1rem;
+  margin: 0.5rem;
+  color: white;
+}
+
+.weather-details img {
+  width: 20px;
+  height: 20px;
+  margin-right: 0.5rem;
+}
+
+#weatherImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+  margin-bottom: 1rem;
+}
+
+.weatherImage {
+  width: 80%;
+  height: auto;
+}
+
+.weather-details-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.weather-details-row h3 {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
 @media screen and (max-width: 480px) {
   /* Adjustments for smaller screens */
   body {
@@ -307,16 +344,16 @@ img {
   #modal > div {
     max-width: 90%;
   }
-  /* 
   .weatherImage {
     width: 60%;
     height: auto;
-  } */
+  }
 }
 
 .modal-textforcast {
   color: hsl(0, 0%, 100%);
   margin-bottom: 1rem;
+  font-size: 2rem;
 }
 
 body.light {

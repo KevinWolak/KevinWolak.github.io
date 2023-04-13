@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "../App.css";
 import nerdImage from "../img/nerdcutout.png";
 import clouds from "../img/clouds.png";
@@ -7,6 +7,8 @@ import snow from "../img/snow.png";
 import drizzle from "../img/drizzle.png";
 import rain from "../img/rain.png";
 import mist from "../img/mist.png";
+import windImg from "../img/wind.png";
+import humidityImg from "../img/humidity.png";
 import { useQuery } from "@tanstack/react-query";
 import fetchWeather from "../hooks/fetchWeather";
 import { useParams } from "react-router-dom";
@@ -20,6 +22,22 @@ const Discription = () => {
   const results = useQuery(["details", id], fetchWeather, {
     enabled: false,
   });
+
+  useEffect(() => {
+    const closeModal = (event) => {
+      if (event.key === "Escape") {
+        setShowModal(false);
+      }
+    };
+
+    if (showModal) {
+      window.addEventListener("keydown", closeModal);
+    }
+
+    return () => {
+      window.removeEventListener("keydown", closeModal);
+    };
+  }, [showModal]);
 
   const displayWeatherImg = (data) => {
     if (data.weather[0].description.includes("rain")) {
@@ -39,9 +57,12 @@ const Discription = () => {
     }
   };
 
-  const weather = results.data?.weather[0];
+  const humidity = results.data?.main.humidity;
+  const wind = results.data?.wind.speed;
   const city = results.data?.name;
   const temp = parseInt(results.data?.main.temp);
+  console.log(humidity);
+  console.log(wind);
 
   const showWeatherHandler = () => {
     setShowModal(true);
@@ -68,6 +89,10 @@ const Discription = () => {
           </button>
           {showModal && (
             <Modal>
+              <div
+                className="modal"
+                onClick={(event) => event.stopPropagation()}
+              ></div>
               {results.isLoading ? (
                 <div className="loading-pane">
                   <h2 className="loader">🌀</h2>
@@ -76,6 +101,20 @@ const Discription = () => {
                 <div className="weatherContainery">
                   <div className="buttons">
                     <div id="weatherImg">{displayWeatherImg(results.data)}</div>
+                    <div className="weather-details">
+                      <div class="weather-details-row">
+                        <h3>
+                          <img src={humidityImg} />
+                          Humidity:
+                          {humidity}
+                        </h3>
+                        <h3>
+                          <img src={windImg} />
+                          Wind:
+                          {wind}
+                        </h3>
+                      </div>
+                    </div>
                     <h3 className="temp">{temp}ºC </h3>
                     {/* <h2 className="modal-textforcast">{weather?.main}</h2> */}
                     <h2 className="modal-textforcast">{city} </h2>
