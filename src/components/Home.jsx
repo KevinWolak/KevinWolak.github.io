@@ -85,8 +85,8 @@ const Discription = () => {
           {/* 
           <p>Currently, I'm working on building a Tutoring Website.</p> */}
           <p>
-            Currently, I am focus on building a Tutoring Website utilizing the
-            latest web development standards and practices.
+            Currently, I am focusing on building a Tutoring Website utilizing
+            the latest web development standards and practices.
           </p>
           <button className="button " onClick={showWeatherHandler}>
             Weather Report
