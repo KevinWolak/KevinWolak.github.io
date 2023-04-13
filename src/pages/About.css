@@ -145,3 +145,26 @@ body.dark .detial:hover {
   color: #86fbfb;
   text-decoration: none;
 }
+.json-object {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.json-object.show {
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.json-object.animate {
+  animation: fadeIn 0.5s forwards;
+}
