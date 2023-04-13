@@ -31,7 +31,7 @@ const About = () => {
       </section>
       <section className="container">
         <h2 className="detial" onClick={jsonHandler}>
-          {"const Detail = { "}
+          {"const clickMe = { "}
         </h2>
         {title ? (
           <div>

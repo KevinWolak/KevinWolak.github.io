@@ -17,6 +17,14 @@ import Modal from "../Modal/modal";
 
 const Discription = () => {
   const [showModal, setShowModal] = useState(false);
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      setVisible(true);
+    }, 500);
+    return () => clearTimeout(timeoutId);
+  }, []);
 
   const { id } = useParams();
   const results = useQuery(["details", id], fetchWeather, {
@@ -61,8 +69,6 @@ const Discription = () => {
   const wind = parseInt(results.data?.wind.speed);
   const city = results.data?.name;
   const temp = parseInt(results.data?.main.temp);
-  console.log(humidity);
-  console.log(wind);
 
   const showWeatherHandler = () => {
     setShowModal(true);
@@ -70,7 +76,7 @@ const Discription = () => {
   };
 
   return (
-    <div className="App">
+    <div className={`fade-in ${visible ? "visible" : ""}`}>
       <div className="content">
         <section className="intro">
           <p className="name">
