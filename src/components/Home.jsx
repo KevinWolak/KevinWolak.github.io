@@ -85,8 +85,8 @@ const Discription = () => {
           <h2 className="devlopTag">I develop front and back-end websites.</h2>
           <img src={nerdImage} alt="nerdImage" />
           <p>
-            I'm a developer that recently graduated from Fanshawe College. I
-            specialize in React.js and Express.js.
+            I'm a developer that graduated from Fanshawe College. I specialize
+            in React.js and Express.js.
           </p>
           {/* 
           <p>Currently, I'm working on building a Tutoring Website.</p> */}
