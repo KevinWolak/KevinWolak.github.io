@@ -54,9 +54,9 @@ const About = () => {
                 <p>"number": "519-694-6925",</p>
                 <p>"email": "kevinwolak96@gmail.com"</p>
               </section>
-              <p>{'"Passion": {'}</p>
+              <p>{'"passion": {'}</p>
               <section className="arrayContainer">
-                <p>{'"Hobbies": ['}</p>
+                <p>{'"hobbies": ['}</p>
                 <p className="languages">
                   {" "}
                   "Code", "Chess", "Golf", "Baseketball"
@@ -72,7 +72,7 @@ const About = () => {
                   "C++", C#, "Cobol"
                 </p>
                 <p>{"]"},</p>
-                <p>{'"Technologies": ['}</p>
+                <p>{'"technologies": ['}</p>
                 <p className="languages">
                   "Postman", "Git", "GitHub", "Bootstrap", "TailWind"
                 </p>
