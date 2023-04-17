@@ -59,7 +59,7 @@ const About = () => {
                 <p>{'"hobbies": ['}</p>
                 <p className="languages">
                   {" "}
-                  "Code", "Chess", "Golf", "Baseketball"
+                  "Code", "Chess", "Golf", "Basketball"
                 </p>
                 <p>{"]"}</p>
               </section>
