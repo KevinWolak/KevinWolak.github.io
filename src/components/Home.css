@@ -412,7 +412,7 @@ body.dark p {
   color: rgb(255, 255, 255);
 }
 
-body.dark h2 {
+body.dark .devlopTag {
   color: rgb(255, 255, 255);
   margin-left: -0.9rem;
   font-weight: 900;
