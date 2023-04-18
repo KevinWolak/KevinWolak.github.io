@@ -427,8 +427,8 @@ body.dark .name span {
   margin-left: -0.2rem;
 }
 
-body.dark p {
-  margin-left: -0.8rem;
+body.dark .description {
+  margin-left: -1rem;
 }
 .fade-in {
   opacity: 0;
@@ -440,16 +440,3 @@ body.dark p {
   opacity: 1;
   background-color: transparent;
 }
-/* .grain_overlay {
-  position: fixed;
-  left: 0;
-  top: -80%;
-  right: 0;
-  bottom: -80%;
-  z-index: 0;
-  display: block;
-  background-image: url("https://assets.website-files.com/6245b8598294a183abe645d8/6251ae2f83aa8cb43c3339a5_5c06f51d6e75c933fe05c728_giphy.gif");
-  background-position: 0 0;
-  background-size: auto;
-  opacity: 0.05;
-} */

@@ -85,7 +85,7 @@ const Discription = () => {
           </p>
           <h2 className="devlopTag">I develop front and back-end websites.</h2>
           <img src={nerdImage} alt="nerdImage" />
-          <p>
+          <p className="description">
             I'm a developer that graduated from Fanshawe College. I specialize
             in React.js and Express.js.Currently, I am focusing on building a
             Tutoring Website utilizing the latest web development standards and
