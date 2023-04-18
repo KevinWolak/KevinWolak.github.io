@@ -192,6 +192,10 @@ body.dark .detial:hover {
   color: #86fbfb;
   text-decoration: none;
 }
+
+body.dark .lastBracket {
+  color: white;
+}
 .json-object {
   opacity: 0;
   transition: opacity 0.3s ease-in-out;

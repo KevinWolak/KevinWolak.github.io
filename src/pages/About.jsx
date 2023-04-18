@@ -80,7 +80,7 @@ const About = () => {
                 <p>{"]"}</p>
               </section>
               <p className="indentation">{"}"}</p>
-              <h2>{"}"} </h2>
+              <h2 className="lastBracket">{"}"} </h2>
             </div>
           ) : null}
         </div>
