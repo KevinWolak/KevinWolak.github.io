@@ -108,7 +108,7 @@ body.dark .dynamic-txts li span::after {
   left: 0;
   height: 97.5%;
   width: 100%;
-  background: #171321;
+  background: #020c1b;
   border-left: 1.5px solid #86fbfb;
   animation: typing 2.25s steps(10) infinite;
 }
@@ -126,7 +126,7 @@ body.dark .wrapper {
   margin-left: -0.1rem;
   display: flex;
   min-height: 1vh;
-  background: #171321;
+  background: #020c1b;
 }
 body.dark .container {
   margin-left: auto;
