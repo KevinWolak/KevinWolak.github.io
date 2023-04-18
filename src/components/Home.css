@@ -432,7 +432,7 @@ body.dark .description {
 }
 .fade-in {
   opacity: 0;
-  background-color: #fff;
+  /* background-color: #fff; */
   transition: opacity 1s ease-in, background-color 0.5s ease-out;
 }
 
