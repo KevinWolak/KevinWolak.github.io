@@ -29,7 +29,7 @@ const About = () => {
           </ul>
         </div>
       </section>
-      <section className="container">
+      <section className="container grain_overlay">
         <h2 className="detial" onClick={jsonHandler}>
           {"const clickMe = { "}
         </h2>

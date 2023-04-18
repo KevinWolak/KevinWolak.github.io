@@ -77,22 +77,19 @@ const Discription = () => {
 
   return (
     <div className={`fade-in ${visible ? "visible" : ""}`}>
+      {/* <div className="grain_overlay"></div> */}
       <div className="content">
         <section className="intro">
           <p className="name">
-            Hi, my name is <span>Kevin Wolak</span>
+            Hi, my name is <span>Kevin Wolak.</span>
           </p>
           <h2 className="devlopTag">I develop front and back-end websites.</h2>
           <img src={nerdImage} alt="nerdImage" />
           <p>
             I'm a developer that graduated from Fanshawe College. I specialize
-            in React.js and Express.js.
-          </p>
-          {/* 
-          <p>Currently, I'm working on building a Tutoring Website.</p> */}
-          <p>
-            Currently, I am focusing on building a Tutoring Website utilizing
-            the latest web development standards and practices.
+            in React.js and Express.js.Currently, I am focusing on building a
+            Tutoring Website utilizing the latest web development standards and
+            practices.
           </p>
           <button className="button " onClick={showWeatherHandler}>
             Weather Report

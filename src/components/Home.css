@@ -38,31 +38,39 @@ a:hover {
   text-decoration: none;
 }
 
+.devlopTag {
+  font-weight: 800;
+  margin-top: -1.1rem;
+  font-size: 4rem;
+  margin-right: 9rem;
+}
+
 .intro {
   padding-bottom: 10rem;
 }
 
 .intro p {
-  font-size: 0.75rem;
-  line-height: 1.5;
+  font-size: 1rem;
+  line-height: 1.2;
   font-family: var(--sans);
 }
 
 .intro .name {
   font-family: var(--sans);
-  font-size: 0.75rem;
+  font-size: 1rem;
 }
 .name span {
   font-family: var(--sans);
   font-size: 4rem;
   color: #46b9ad;
   display: block;
-  font-weight: 300;
+  font-weight: 700;
 }
 
 .intro h2 {
   font-size: 2.3rem;
-  margin-left: -1rem;
+  font-weight: 900;
+  margin-left: 1.4rem;
 }
 
 body.dark-mode .name span {
@@ -395,7 +403,7 @@ body.light {
 }
 
 body.dark {
-  background-color: #171321;
+  background-color: #020c1b;
 }
 
 body.dark p {
@@ -404,6 +412,8 @@ body.dark p {
 
 body.dark h2 {
   color: rgb(255, 255, 255);
+  margin-left: 1.6rem;
+  font-weight: 900;
 }
 
 body.dark .name span {
@@ -411,15 +421,9 @@ body.dark .name span {
   font-size: 4rem;
   color: #86fbfb;
   display: block;
-  font-weight: 300;
+  font-weight: 700;
 }
-/* .fade-in {
-  opacity: 0;
-  transition: opacity 1s ease-in;
-}
-.fade-in.visible {
-  opacity: 1;
-} */
+
 .fade-in {
   opacity: 0;
   background-color: #fff;
@@ -430,3 +434,16 @@ body.dark .name span {
   opacity: 1;
   background-color: transparent;
 }
+/* .grain_overlay {
+  position: fixed;
+  left: 0;
+  top: -80%;
+  right: 0;
+  bottom: -80%;
+  z-index: 0;
+  display: block;
+  background-image: url("https://assets.website-files.com/6245b8598294a183abe645d8/6251ae2f83aa8cb43c3339a5_5c06f51d6e75c933fe05c728_giphy.gif");
+  background-position: 0 0;
+  background-size: auto;
+  opacity: 0.05;
+} */

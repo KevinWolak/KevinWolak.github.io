@@ -11,6 +11,7 @@
   --sans: Oxygen, sans-serif;
 }
 .container {
+  z-index: 1;
   margin-left: auto;
   margin-right: auto;
   width: 41.25rem;
