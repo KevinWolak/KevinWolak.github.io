@@ -29,13 +29,14 @@ const About = () => {
           </ul>
         </div>
       </section>
-      <section className="container grain_overlay">
+      <section className="container">
+        <div class="container-bg"></div>
         <h2 className="detial" onClick={jsonHandler}>
           {"const clickMe = { "}
         </h2>
         <div className={title ? "json-object show animate" : "json-object"}>
           {title ? (
-            <div>
+            <div className="visible">
               <p>{'"basicInfo": {'}</p>
               <section className="arrayContainer">
                 <p>"firstName": "Kevin",</p>
