@@ -9,6 +9,7 @@ import rain from "../img/rain.png";
 import mist from "../img/mist.png";
 import windImg from "../img/wind.png";
 import humidityImg from "../img/humidity.png";
+import me from "../img/me2.jpg";
 import { useQuery } from "@tanstack/react-query";
 import fetchWeather from "../hooks/fetchWeather";
 import { useParams } from "react-router-dom";
@@ -84,7 +85,9 @@ const Discription = () => {
             Hi, my name is <span>Kevin Wolak.</span>
           </p>
           <h2 className="devlopTag">I develop front and back-end websites.</h2>
-          <img src={nerdImage} alt="nerdImage" />
+          <div className="image-container">
+            <img id="Me" src={me} alt="nerdImage" />
+          </div>
           <p className="description">
             I'm a developer that graduated from Fanshawe College. I specialize
             in React.js and Express.js.Currently, I am focusing on building a
